@@ -1,6 +1,6 @@
 <template>
   <section class="container">
-    <p class="line-id">LINE ID：{{ lineId }}</p>
+    <p class="line-id home-title">LINE ID：{{ lineId }}</p>
     <div class="form">
       <div class="control">
         <input class="input" type="text" placeholder="お名前" v-model="formData.name">
@@ -70,15 +70,24 @@ export default {
 <style>
 .container {
   margin: 0 auto;
-  padding: 20px;
   min-height: 100vh;
+  padding: 60px;
+  font-size: 40px;
+  text-align: center;
 }
 
 .line-id {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .form > * {
-  margin-bottom: 10px;
+  font-size: 20px;
+  margin-bottom: 5px;
 }
+
+.home-title {
+  color: #06c755;
+  text-decoration: none;
+}
+
 </style>
